@@ -1,0 +1,15 @@
+import { Routes } from '@angular/router';
+import { CommonUtilsComponent } from './components/common-utils.component';
+
+export const routes: Routes = [
+    {
+        path: 'components',
+        component: CommonUtilsComponent,
+        children: [
+            {
+                path: 'common-utils',
+                component: CommonUtilsComponent
+            }
+        ]
+    }
+];
